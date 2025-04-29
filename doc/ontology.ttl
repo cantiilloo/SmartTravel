@@ -1,0 +1,591 @@
+@prefix : <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#> .
+
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#sameAs
+:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://dbpedia.org/page/Company#hasCompany
+<https://dbpedia.org/page/Company#hasCompany> rdf:type owl:ObjectProperty ;
+                                              rdfs:domain :Transport ;
+                                              rdfs:range <https://dbpedia.org/page/Company> ;
+                                              rdfs:comment "Represents the company that offers a transport service"@en ;
+                                              rdfs:label "hasCompany"@en .
+
+
+###  https://dbpedia.org/page/Company#hasLocalization
+<https://dbpedia.org/page/Company#hasLocalization> rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain :City ;
+                                                   rdfs:range <https://dbpedia.org/page/Company#Localization> ;
+                                                   rdfs:comment "Represents the localization in coordinates of a city"@en ;
+                                                   rdfs:label "hasLocalization"@en .
+
+
+###  https://dbpedia.org/page/Company#hasPrice
+<https://dbpedia.org/page/Company#hasPrice> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain <https://dbpedia.org/page/Company#Service> ;
+                                            rdfs:range <https://dbpedia.org/page/Company#Price> ;
+                                            rdfs:comment "Represents the average cost of a service"@en ;
+                                            rdfs:label "hasPrice"@en .
+
+
+###  https://dbpedia.org/page/Company#hasRating
+<https://dbpedia.org/page/Company#hasRating> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <https://dbpedia.org/page/Company#Service> ;
+                                             rdfs:range <https://dbpedia.org/page/Company#Rating> ;
+                                             rdfs:comment "Represents the rating of a service"@en ;
+                                             rdfs:label "hasRating" .
+
+
+###  https://dbpedia.org/page/Company#hasServices
+<https://dbpedia.org/page/Company#hasServices> rdf:type owl:ObjectProperty ;
+                                               owl:inverseOf <https://dbpedia.org/page/Company#locatedIn> ;
+                                               rdfs:domain :City ;
+                                               rdfs:range <https://dbpedia.org/page/Company#Service> ;
+                                               rdfs:comment "Represents all the services that a city offers"@en ;
+                                               rdfs:label "hasServices"@en .
+
+
+###  https://dbpedia.org/page/Company#locatedIn
+<https://dbpedia.org/page/Company#locatedIn> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <https://dbpedia.org/page/Company#Service> ;
+                                             rdfs:range :City ;
+                                             rdfs:comment "Represents the city where a service is located"@en ;
+                                             rdfs:label "locatedIn"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#attraction_id
+:attraction_id rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :identifiers ;
+               rdfs:domain :Attraction ;
+               rdfs:range xsd:decimal ;
+               rdfs:comment "Represents the attraction class identifier"@en ;
+               rdfs:label "attraction_id"@en .
+
+
+###  http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#city_id
+:city_id rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf :identifiers ;
+         rdfs:domain :City ;
+         rdfs:range xsd:decimal ;
+         rdfs:comment "Represents the City class identifier"@en ;
+         rdfs:label "city_id"@en .
+
+
+###  http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#cuisineType
+:cuisineType rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :types ;
+             rdfs:domain :Restaurant ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Represent the type of the cuisine of a restaurant"@en ;
+             rdfs:label "cuisineType"@en .
+
+
+###  http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#event_id
+:event_id rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf :identifiers ;
+          rdfs:domain <https://dbpedia.org/page/Company#Event> ;
+          rdfs:range xsd:decimal ;
+          rdfs:comment "Represents the Event class identifier"@en ;
+          rdfs:label "event_id"@en .
+
+
+###  http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#hasDate
+:hasDate rdf:type owl:DatatypeProperty ;
+         rdfs:domain <https://dbpedia.org/page/Company#Event> ;
+         rdfs:range xsd:string ;
+         rdfs:comment "Represents a date in YYYY/MM/DD format"@en ;
+         rdfs:label "hasDate"@en .
+
+
+###  http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#hotelType
+:hotelType rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :types ;
+           rdfs:domain :Hotel ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Represent the type of the hotel"@en ;
+           rdfs:label "hotelType"@en .
+
+
+###  http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#hotel_id
+:hotel_id rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf :identifiers ;
+          rdfs:domain :Hotel ;
+          rdfs:range xsd:decimal ;
+          rdfs:comment "Represents the Hotel class identifier"@en ;
+          rdfs:label "hotel_id"@en .
+
+
+###  http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#identifiers
+:identifiers rdf:type owl:DatatypeProperty ;
+             rdfs:comment "Represents the identifiers of the classes"@en ;
+             rdfs:label "identifiers"@en .
+
+
+###  http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#restaurant_id
+:restaurant_id rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :identifiers ;
+               rdfs:domain :Restaurant ;
+               rdfs:range xsd:decimal ;
+               rdfs:comment "Represents the Restaurant class identifier"@en ;
+               rdfs:label "restaurant_id"@en .
+
+
+###  http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#transport_id
+:transport_id rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :identifiers ;
+              rdfs:domain :Transport ;
+              rdfs:range xsd:decimal ;
+              rdfs:comment "Represents the Transport class identifier"@en ;
+              rdfs:label "transport_id"@en .
+
+
+###  http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#types
+:types rdf:type owl:DatatypeProperty ;
+       rdfs:domain <https://dbpedia.org/page/Company#Service> ;
+       rdfs:range xsd:string .
+
+
+###  https://dbpedia.org/page/City#Coordinates
+<https://dbpedia.org/page/City#Coordinates> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <https://dbpedia.org/page/Company#Localization> ;
+                                            rdfs:range xsd:string ;
+                                            rdfs:comment "Represents the coordinates of a localization"@en ;
+                                            rdfs:label "Coordinates"@en .
+
+
+###  https://dbpedia.org/page/City#eventType
+<https://dbpedia.org/page/City#eventType> rdf:type owl:DatatypeProperty ;
+                                          rdfs:subPropertyOf :types ;
+                                          rdfs:domain <https://dbpedia.org/page/Company#Event> ;
+                                          rdfs:range xsd:string ;
+                                          rdfs:comment "Represent the type of the event"@en ;
+                                          rdfs:label "eventType"@en .
+
+
+###  https://dbpedia.org/page/City#hasName
+<https://dbpedia.org/page/City#hasName> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain owl:Thing ;
+                                        rdfs:range xsd:string ;
+                                        rdfs:comment "Represents the name of an element"@en ;
+                                        rdfs:label "hasName"@en .
+
+
+###  https://dbpedia.org/page/City#priceValue
+<https://dbpedia.org/page/City#priceValue> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <https://dbpedia.org/page/Company#Price> ;
+                                           rdfs:range xsd:decimal ;
+                                           rdfs:comment "Represents the value of the price"@en ;
+                                           rdfs:label "priceValue"@en .
+
+
+###  https://dbpedia.org/page/City#ratingValue
+<https://dbpedia.org/page/City#ratingValue> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <https://dbpedia.org/page/Company#Rating> ;
+                                            rdfs:range xsd:decimal ;
+                                            rdfs:comment "Represents the value of a Rating"@en ;
+                                            rdfs:label "ratingValue"@en .
+
+
+###  https://dbpedia.org/page/Company#hotelStars
+<https://dbpedia.org/page/Company#hotelStars> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain :Hotel ;
+                                              rdfs:range xsd:decimal ;
+                                              rdfs:comment "Represents the number of stars of a hotel"@en ;
+                                              rdfs:label "hotelStars"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Attraction
+:Attraction rdf:type owl:Class ;
+            rdfs:subClassOf <https://dbpedia.org/page/Company#Service> ;
+            rdfs:comment "Attractions are interesting places or monuments for visit"@en ;
+            rdfs:label "Attraction"@en .
+
+
+###  http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Bus
+:Bus rdf:type owl:Class ;
+     rdfs:subClassOf :Public ;
+     :sameAs "https://dbpedia.org/page/Bus"@en ;
+     rdfs:comment "A bus is a big car that have stops and a determined route"@en ;
+     rdfs:label "Bus"@en .
+
+
+###  http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#City
+:City rdf:type owl:Class ;
+      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                        owl:onProperty <https://dbpedia.org/page/Company#hasLocalization> ;
+                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass <https://dbpedia.org/page/Company#Localization>
+                      ] ;
+      rdfs:comment "A city is the place where a service is located or starts/end"@en ;
+      rdfs:label "City"@en .
+
+
+###  http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Hotel
+:Hotel rdf:type owl:Class ;
+       rdfs:subClassOf <https://dbpedia.org/page/Company#Service> ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty <https://dbpedia.org/page/Company#locatedIn> ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass :City
+                       ] ;
+       rdfs:comment "Hotels are places where people can pay for rent a room for a number of nights"@en ;
+       rdfs:label "Hotel"@en .
+
+
+###  http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Private
+:Private rdf:type owl:Class ;
+         rdfs:subClassOf :Transport ;
+         rdfs:comment "Private transport is a paid service"@en ;
+         rdfs:label "Private Transport"@en .
+
+
+###  http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Public
+:Public rdf:type owl:Class ;
+        rdfs:subClassOf :Transport ;
+        rdfs:comment "Public transport is cheaper than private transport or free. Is subsidized by the State"@en ;
+        rdfs:label "Public Transport"@en .
+
+
+###  http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Restaurant
+:Restaurant rdf:type owl:Class ;
+            rdfs:subClassOf <https://dbpedia.org/page/Company#Service> ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :cuisineType ;
+                              owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ;
+            rdfs:comment "A restaurant is a place where people can eat"@en ;
+            rdfs:label "Restaurant"@en .
+
+
+###  http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Subway
+:Subway rdf:type owl:Class ;
+        rdfs:subClassOf :Public ;
+        rdfs:comment "Subway is a transport that circulates under the city and have stops and a determined route."@en ;
+        rdfs:label "Subway"@en .
+
+
+###  http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Train
+:Train rdf:type owl:Class ;
+       rdfs:subClassOf :Public ;
+       :sameAs "https://dbpedia.org/page/Train"@en ;
+       rdfs:comment "Train circulates by railways and have different stops"@en ;
+       rdfs:label "Train"@en .
+
+
+###  http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Transport
+:Transport rdf:type owl:Class ;
+           rdfs:subClassOf <https://dbpedia.org/page/Company#Service> ;
+           rdfs:comment "Transports are services that transports people from one place to another"@en ;
+           rdfs:label "Transport"@en .
+
+
+###  https://dbpedia.org/page/Company
+<https://dbpedia.org/page/Company> rdf:type owl:Class ;
+                                   :sameAs "https://dbpedia.org/page/Company"@en ;
+                                   rdfs:comment "A company is an organization that offers transport services."@en ;
+                                   rdfs:label "Company"@en .
+
+
+###  https://dbpedia.org/page/Company#Event
+<https://dbpedia.org/page/Company#Event> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://dbpedia.org/page/Company#Service> ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :hasDate ;
+                                                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                           owl:onDataRange xsd:string
+                                                         ] ;
+                                         rdfs:comment "An event is one activity that people can participate on"@en ;
+                                         rdfs:label "Event"@en .
+
+
+###  https://dbpedia.org/page/Company#Localization
+<https://dbpedia.org/page/Company#Localization> rdf:type owl:Class ;
+                                                rdfs:comment "Location are de coordinates where a city is located"@en ;
+                                                rdfs:label "Localization"@en .
+
+
+###  https://dbpedia.org/page/Company#Price
+<https://dbpedia.org/page/Company#Price> rdf:type owl:Class ;
+                                         rdfs:comment "Price represents the average cost of a service"@en ;
+                                         rdfs:label "Price"@en .
+
+
+###  https://dbpedia.org/page/Company#Rating
+<https://dbpedia.org/page/Company#Rating> rdf:type owl:Class ;
+                                          rdfs:comment "Rating is a number between 0 to 5 that express the quality of a service based on people's valorations"@en ;
+                                          rdfs:label "Rating"@en .
+
+
+###  https://dbpedia.org/page/Company#Service
+<https://dbpedia.org/page/Company#Service> rdf:type owl:Class ;
+                                           rdfs:comment "Services are activities or places to sleep, eat, etc. offered to the visitors"@en ;
+                                           rdfs:label "Service"@en .
+
+
+###  https://dbpedia.org/page/Company#Taxi
+<https://dbpedia.org/page/Company#Taxi> rdf:type owl:Class ;
+                                        rdfs:subClassOf :Private ;
+                                        rdfs:comment "Taxi is a transport service that a visitor can contract for transport from point A to point B."@en .
+
+
+###  https://dbpedia.org/page/Company#1StarHotel
+<https://dbpedia.org/page/Company#1StarHotel> rdf:type owl:Class ;
+                                              rdfs:subClassOf :Hotel ;
+                                              rdfs:comment "Represents a hotel of 1 star quality"@en ;
+                                              rdfs:label "1StarHotel"@en .
+
+
+###  https://dbpedia.org/page/Company#2StarHotel
+<https://dbpedia.org/page/Company#2StarHotel> rdf:type owl:Class ;
+                                              rdfs:subClassOf :Hotel ;
+                                              rdfs:comment "Represents a hotel of 2 stars quality"@en ;
+                                              rdfs:label "2StarHotel"@en .
+
+
+###  https://dbpedia.org/page/Company#3StarHotel
+<https://dbpedia.org/page/Company#3StarHotel> rdf:type owl:Class ;
+                                              rdfs:subClassOf :Hotel ;
+                                              rdfs:comment "Represents a hotel of 3 stars quality"@en ;
+                                              rdfs:label "3StarHotel"@en .
+
+
+###  https://dbpedia.org/page/Company#4StarHotel
+<https://dbpedia.org/page/Company#4StarHotel> rdf:type owl:Class ;
+                                              rdfs:subClassOf :Hotel ;
+                                              rdfs:comment "Represents a hotel of 4 stars quality"@en ;
+                                              rdfs:label "4StarHotel"@en .
+
+
+###  https://dbpedia.org/page/Company#5StarHotel
+<https://dbpedia.org/page/Company#5StarHotel> rdf:type owl:Class ;
+                                              rdfs:subClassOf :Hotel ;
+                                              rdfs:comment "Represents a hotel of 5 stars quality"@en ;
+                                              rdfs:label "5StarHotel"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://dbpedia.org/page/City#Barcelona
+<https://dbpedia.org/page/City#Barcelona> rdf:type owl:NamedIndividual ,
+                                                   :City ;
+                                          <https://dbpedia.org/page/Company#hasLocalization> <https://dbpedia.org/page/City#Localization1> ;
+                                          :city_id 1 ;
+                                          <https://dbpedia.org/page/City#hasName> "Barcelona" .
+
+
+###  https://dbpedia.org/page/City#Localization1
+<https://dbpedia.org/page/City#Localization1> rdf:type owl:NamedIndividual ,
+                                                       <https://dbpedia.org/page/Company#Localization> ;
+                                              <https://dbpedia.org/page/City#Coordinates> "1.23, 2.45" .
+
+
+###  https://dbpedia.org/page/City#Rating1
+<https://dbpedia.org/page/City#Rating1> rdf:type owl:NamedIndividual ;
+                                        <https://dbpedia.org/page/City#ratingValue> 4.3 .
+
+
+###  https://dbpedia.org/page/City#19,8
+<https://dbpedia.org/page/City#19,8> rdf:type owl:NamedIndividual ;
+                                     <https://dbpedia.org/page/City#priceValue> 19.8 ;
+                                     rdfs:label "Price"@en .
+
+
+###  https://dbpedia.org/page/Company#AMB
+<https://dbpedia.org/page/Company#AMB> rdf:type owl:NamedIndividual ,
+                                                <https://dbpedia.org/page/Company> ;
+                                       <https://dbpedia.org/page/City#hasName> "AMB" .
+
+
+###  https://dbpedia.org/page/Event#Festival_DURO
+<https://dbpedia.org/page/Event#Festival_DURO> rdf:type owl:NamedIndividual ,
+                                                        <https://dbpedia.org/page/Company#Event> ;
+                                               <https://dbpedia.org/page/Company#locatedIn> <https://dbpedia.org/page/City#Barcelona> ;
+                                               :event_id 1 ;
+                                               :hasDate "2025/04/18" ;
+                                               <https://dbpedia.org/page/City#eventType> "Music" ;
+                                               <https://dbpedia.org/page/City#hasName> "Festival DURO" .
+
+
+###  https://dbpedia.org/page/Hotel#NH
+<https://dbpedia.org/page/Hotel#NH> rdf:type owl:NamedIndividual ,
+                                             :Hotel ;
+                                    <https://dbpedia.org/page/Company#hasPrice> <https://dbpedia.org/page/City#19,8> ;
+                                    <https://dbpedia.org/page/Company#hasRating> <https://dbpedia.org/page/City#Rating1> ;
+                                    <https://dbpedia.org/page/Company#locatedIn> <https://dbpedia.org/page/City#Barcelona> ;
+                                    :hotel_id 1 ;
+                                    <https://dbpedia.org/page/City#hasName> "NH" ;
+                                    <https://dbpedia.org/page/Company#hotelStars> 4 .
+
+
+###  https://dbpedia.org/page/Restaurant#Bar_Manolo
+<https://dbpedia.org/page/Restaurant#Bar_Manolo> rdf:type owl:NamedIndividual ,
+                                                          :Restaurant ;
+                                                 <https://dbpedia.org/page/Company#hasPrice> <https://dbpedia.org/page/City#19,8> ;
+                                                 :cuisineType "Andaluza" ;
+                                                 :restaurant_id 1 ;
+                                                 <https://dbpedia.org/page/City#hasName> "Bar Manolo" .
+
+
+###  https://dbpedia.org/page/Transport/Public_Transport/Subway#L1
+<https://dbpedia.org/page/Transport/Public_Transport/Subway#L1> rdf:type owl:NamedIndividual ,
+                                                                         :Subway ;
+                                                                <https://dbpedia.org/page/Company#hasCompany> <https://dbpedia.org/page/Company#AMB> ;
+                                                                <https://dbpedia.org/page/Company#locatedIn> <https://dbpedia.org/page/City#Barcelona> ;
+                                                                :transport_id 1 ;
+                                                                <https://dbpedia.org/page/City#hasName> "L1" .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#h> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Hotel ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://dbpedia.org/page/Company#hotelStars> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> 2
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <https://dbpedia.org/page/Company#2StarHotel> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Hotel ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://dbpedia.org/page/Company#hotelStars> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> 3
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <https://dbpedia.org/page/Company#3StarHotel> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Hotel ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://dbpedia.org/page/Company#hotelStars> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> 4
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <https://dbpedia.org/page/Company#4StarHotel> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Hotel ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://dbpedia.org/page/Company#hotelStars> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> 5
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <https://dbpedia.org/page/Company#5StarHotel> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Hotel ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://dbpedia.org/page/Company#hotelStars> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> 1
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <https://dbpedia.org/page/Company#1StarHotel> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

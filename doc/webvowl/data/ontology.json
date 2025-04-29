@@ -1,0 +1,1146 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "https://dbpedia.org/page/Company", "https://dbpedia.org/page/City", "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5", "http://www.w3.org/2001/XMLSchema", "https://dbpedia.org/page" ],
+    "iri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://dbpedia.org/page/Company#5StarHotel",
+    "baseIri" : "https://dbpedia.org/page/Company",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "5StarHotel",
+      "en" : "5StarHotel"
+    },
+    "comment" : {
+      "en" : "Represents a hotel of 5 stars quality"
+    },
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://dbpedia.org/page/Company#Rating",
+    "baseIri" : "https://dbpedia.org/page/Company",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Rating",
+      "en" : "Rating"
+    },
+    "comment" : {
+      "en" : "Rating is a number between 0 to 5 that express the quality of a service based on people's valorations"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://dbpedia.org/page/Company#3StarHotel",
+    "baseIri" : "https://dbpedia.org/page/Company",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "3StarHotel",
+      "en" : "3StarHotel"
+    },
+    "comment" : {
+      "en" : "Represents a hotel of 3 stars quality"
+    },
+    "attributes" : [ "external" ],
+    "id" : "24",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://dbpedia.org/page/Company#4StarHotel",
+    "baseIri" : "https://dbpedia.org/page/Company",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "4StarHotel",
+      "en" : "4StarHotel"
+    },
+    "comment" : {
+      "en" : "Represents a hotel of 4 stars quality"
+    },
+    "attributes" : [ "external" ],
+    "id" : "30",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://dbpedia.org/page/Company#1StarHotel",
+    "baseIri" : "https://dbpedia.org/page/Company",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "1StarHotel",
+      "en" : "1StarHotel"
+    },
+    "comment" : {
+      "en" : "Represents a hotel of 1 star quality"
+    },
+    "attributes" : [ "external" ],
+    "id" : "32",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://dbpedia.org/page/Company#2StarHotel",
+    "baseIri" : "https://dbpedia.org/page/Company",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "2StarHotel",
+      "en" : "2StarHotel"
+    },
+    "comment" : {
+      "en" : "Represents a hotel of 2 stars quality"
+    },
+    "attributes" : [ "external" ],
+    "id" : "34",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Attraction",
+    "baseIri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Attraction",
+      "en" : "Attraction"
+    },
+    "comment" : {
+      "en" : "Attractions are interesting places or monuments for visit"
+    },
+    "id" : "10",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Subway",
+    "baseIri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Subway",
+      "en" : "Subway"
+    },
+    "individuals" : [ {
+      "iri" : "https://dbpedia.org/page/Transport/Public_Transport/Subway#L1",
+      "baseIri" : "https://dbpedia.org/page/Transport/Public_Transport/Subway",
+      "labels" : {
+        "IRI-based" : "L1"
+      }
+    } ],
+    "comment" : {
+      "en" : "Subway is a transport that circulates under the city and have stops and a determined route."
+    },
+    "id" : "22",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://dbpedia.org/page/Company",
+    "baseIri" : "https://dbpedia.org/page",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "en",
+        "value" : "https://dbpedia.org/page/Company",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Company",
+      "en" : "Company"
+    },
+    "individuals" : [ {
+      "iri" : "https://dbpedia.org/page/Company#AMB",
+      "baseIri" : "https://dbpedia.org/page/Company",
+      "labels" : {
+        "IRI-based" : "AMB"
+      }
+    } ],
+    "comment" : {
+      "en" : "A company is an organization that offers transport services."
+    },
+    "attributes" : [ "external" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://dbpedia.org/page/Company#Taxi",
+    "baseIri" : "https://dbpedia.org/page/Company",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Taxi"
+    },
+    "comment" : {
+      "en" : "Taxi is a transport service that a visitor can contract for transport from point A to point B."
+    },
+    "attributes" : [ "external" ],
+    "id" : "40",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Restaurant",
+    "baseIri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Restaurant",
+      "en" : "Restaurant"
+    },
+    "individuals" : [ {
+      "iri" : "https://dbpedia.org/page/Restaurant#Bar_Manolo",
+      "baseIri" : "https://dbpedia.org/page/Restaurant",
+      "labels" : {
+        "IRI-based" : "Bar_Manolo"
+      }
+    } ],
+    "comment" : {
+      "en" : "A restaurant is a place where people can eat"
+    },
+    "id" : "26",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "57",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "58",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#City",
+    "baseIri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "City",
+      "en" : "City"
+    },
+    "individuals" : [ {
+      "iri" : "https://dbpedia.org/page/City#Barcelona",
+      "baseIri" : "https://dbpedia.org/page/City",
+      "labels" : {
+        "IRI-based" : "Barcelona"
+      }
+    } ],
+    "comment" : {
+      "en" : "A city is the place where a service is located or starts/end"
+    },
+    "id" : "13"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "61",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "https://dbpedia.org/page/Company#Event",
+    "baseIri" : "https://dbpedia.org/page/Company",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event",
+      "en" : "Event"
+    },
+    "individuals" : [ {
+      "iri" : "https://dbpedia.org/page/Event#Festival_DURO",
+      "baseIri" : "https://dbpedia.org/page/Event",
+      "labels" : {
+        "IRI-based" : "Festival_DURO"
+      }
+    } ],
+    "comment" : {
+      "en" : "An event is one activity that people can participate on"
+    },
+    "attributes" : [ "external" ],
+    "id" : "36",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Hotel",
+    "baseIri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hotel",
+      "en" : "Hotel"
+    },
+    "individuals" : [ {
+      "iri" : "https://dbpedia.org/page/Hotel#NH",
+      "baseIri" : "https://dbpedia.org/page/Hotel",
+      "labels" : {
+        "IRI-based" : "NH"
+      }
+    } ],
+    "subClasses" : [ "6", "24", "30", "32", "34" ],
+    "comment" : {
+      "en" : "Hotels are places where people can pay for rent a room for a number of nights"
+    },
+    "id" : "7",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Private",
+    "baseIri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Private",
+      "en" : "Private Transport"
+    },
+    "subClasses" : [ "40" ],
+    "comment" : {
+      "en" : "Private transport is a paid service"
+    },
+    "id" : "41",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "64",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "52",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Bus",
+    "baseIri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "en",
+        "value" : "https://dbpedia.org/page/Bus",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Bus",
+      "en" : "Bus"
+    },
+    "comment" : {
+      "en" : "A bus is a big car that have stops and a determined route"
+    },
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://dbpedia.org/page/Company#Price",
+    "baseIri" : "https://dbpedia.org/page/Company",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Price",
+      "en" : "Price"
+    },
+    "comment" : {
+      "en" : "Price represents the average cost of a service"
+    },
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "https://dbpedia.org/page/Company#Service",
+    "baseIri" : "https://dbpedia.org/page/Company",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Service",
+      "en" : "Service"
+    },
+    "subClasses" : [ "28", "26", "36", "7", "10" ],
+    "comment" : {
+      "en" : "Services are activities or places to sleep, eat, etc. offered to the visitors"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Public",
+    "baseIri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Public",
+      "en" : "Public Transport"
+    },
+    "subClasses" : [ "22", "4", "67" ],
+    "comment" : {
+      "en" : "Public transport is cheaper than private transport or free. Is subsidized by the State"
+    },
+    "id" : "5",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Transport",
+    "baseIri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Transport",
+      "en" : "Transport"
+    },
+    "subClasses" : [ "5", "41" ],
+    "comment" : {
+      "en" : "Transports are services that transports people from one place to another"
+    },
+    "id" : "28",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "https://dbpedia.org/page/Company#Localization",
+    "baseIri" : "https://dbpedia.org/page/Company",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Localization",
+      "en" : "Localization"
+    },
+    "individuals" : [ {
+      "iri" : "https://dbpedia.org/page/City#Localization1",
+      "baseIri" : "https://dbpedia.org/page/City",
+      "labels" : {
+        "IRI-based" : "Localization1"
+      }
+    } ],
+    "comment" : {
+      "en" : "Location are de coordinates where a city is located"
+    },
+    "attributes" : [ "external" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Train",
+    "baseIri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "en",
+        "value" : "https://dbpedia.org/page/Train",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Train",
+      "en" : "Train"
+    },
+    "comment" : {
+      "en" : "Train circulates by railways and have different stops"
+    },
+    "id" : "67",
+    "superClasses" : [ "5" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "9",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://dbpedia.org/page/City#hasName",
+    "baseIri" : "https://dbpedia.org/page/City",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasName",
+      "en" : "hasName"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Represents the name of an element"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "0"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#attraction_id",
+    "baseIri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "attraction_id",
+      "en" : "attraction_id"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Represents the attraction class identifier"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#city_id",
+    "baseIri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "city_id",
+      "en" : "city_id"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Represents the City class identifier"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://dbpedia.org/page/Company#hasPrice",
+    "baseIri" : "https://dbpedia.org/page/Company",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "hasPrice",
+      "en" : "hasPrice"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Represents the average cost of a service"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://dbpedia.org/page/City#ratingValue",
+    "baseIri" : "https://dbpedia.org/page/City",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "ratingValue",
+      "en" : "ratingValue"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "Represents the value of a Rating"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://dbpedia.org/page/Company#hasRating",
+    "baseIri" : "https://dbpedia.org/page/Company",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasRating",
+      "undefined" : "hasRating"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Represents the rating of a service"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "20"
+  }, {
+    "range" : "5",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "21"
+  }, {
+    "range" : "16",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "23"
+  }, {
+    "range" : "16",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "https://dbpedia.org/page/Company#hasCompany",
+    "baseIri" : "https://dbpedia.org/page/Company",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "hasCompany",
+      "en" : "hasCompany"
+    },
+    "domain" : "28",
+    "comment" : {
+      "en" : "Represents the company that offers a transport service"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "16",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "31"
+  }, {
+    "range" : "16",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "range" : "16",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "range" : "7",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "37"
+  }, {
+    "range" : "7",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "38"
+  }, {
+    "range" : "41",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "range" : "7",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#event_id",
+    "baseIri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "event_id",
+      "en" : "event_id"
+    },
+    "domain" : "36",
+    "comment" : {
+      "en" : "Represents the Event class identifier"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#restaurant_id",
+    "baseIri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "restaurant_id",
+      "en" : "restaurant_id"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "Represents the Restaurant class identifier"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://dbpedia.org/page/Company#hotelStars",
+    "baseIri" : "https://dbpedia.org/page/Company",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "hotelStars",
+      "en" : "hotelStars"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Represents the number of stars of a hotel"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "47"
+  }, {
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#types",
+    "baseIri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "types"
+    },
+    "domain" : "16",
+    "attributes" : [ "datatype" ],
+    "id" : "51"
+  }, {
+    "range" : "7",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#hotel_id",
+    "baseIri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "hotel_id",
+      "en" : "hotel_id"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Represents the Hotel class identifier"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "54"
+  }, {
+    "iri" : "https://dbpedia.org/page/Company#hasServices",
+    "inverse" : "63",
+    "baseIri" : "https://dbpedia.org/page/Company",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasServices",
+      "en" : "hasServices"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Represents all the services that a city offers"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#identifiers",
+    "baseIri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "identifiers",
+      "en" : "identifiers"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Represents the identifiers of the classes"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#hasDate",
+    "baseIri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "hasDate",
+      "en" : "hasDate"
+    },
+    "minCardinality" : "1",
+    "domain" : "36",
+    "comment" : {
+      "en" : "Represents a date in YYYY/MM/DD format"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://dbpedia.org/page/City#Coordinates",
+    "baseIri" : "https://dbpedia.org/page/City",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "Coordinates",
+      "en" : "Coordinates"
+    },
+    "domain" : "69",
+    "comment" : {
+      "en" : "Represents the coordinates of a localization"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#cuisineType",
+    "baseIri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "cuisineType",
+      "en" : "cuisineType"
+    },
+    "minCardinality" : "1",
+    "domain" : "26",
+    "comment" : {
+      "en" : "Represent the type of the cuisine of a restaurant"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "70"
+  }, {
+    "iri" : "https://dbpedia.org/page/City#priceValue",
+    "baseIri" : "https://dbpedia.org/page/City",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "priceValue",
+      "en" : "priceValue"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Represents the value of the price"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "71"
+  }, {
+    "iri" : "https://dbpedia.org/page/Company#hasLocalization",
+    "baseIri" : "https://dbpedia.org/page/Company",
+    "range" : "69",
+    "label" : {
+      "IRI-based" : "hasLocalization",
+      "en" : "hasLocalization"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Represents the localization in coordinates of a city"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#hotelType",
+    "baseIri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "hotelType",
+      "en" : "hotelType"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Represent the type of the hotel"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "73"
+  }, {
+    "iri" : "https://dbpedia.org/page/Company#locatedIn",
+    "baseIri" : "https://dbpedia.org/page/Company",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "locatedIn",
+      "en" : "locatedIn"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Represents the city where a service is located"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#transport_id",
+    "baseIri" : "http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "transport_id",
+      "en" : "transport_id"
+    },
+    "domain" : "28",
+    "comment" : {
+      "en" : "Represents the Transport class identifier"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "74"
+  }, {
+    "range" : "28",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "75"
+  }, {
+    "iri" : "https://dbpedia.org/page/City#eventType",
+    "baseIri" : "https://dbpedia.org/page/City",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "eventType",
+      "en" : "eventType"
+    },
+    "domain" : "36",
+    "comment" : {
+      "en" : "Represent the type of the event"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "76"
+  }, {
+    "range" : "5",
+    "domain" : "67",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "77"
+  }, {
+    "range" : "28",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "78"
+  } ]
+}

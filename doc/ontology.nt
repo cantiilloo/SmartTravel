@@ -1,0 +1,546 @@
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#sameAs
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://dbpedia.org/page/Company#hasCompany
+<https://dbpedia.org/page/Company#hasCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://dbpedia.org/page/Company#hasCompany> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Transport> .
+<https://dbpedia.org/page/Company#hasCompany> <http://www.w3.org/2000/01/rdf-schema#range> <https://dbpedia.org/page/Company> .
+<https://dbpedia.org/page/Company#hasCompany> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the company that offers a transport service"@en .
+<https://dbpedia.org/page/Company#hasCompany> <http://www.w3.org/2000/01/rdf-schema#label> "hasCompany"@en .
+# 
+# https://dbpedia.org/page/Company#hasLocalization
+<https://dbpedia.org/page/Company#hasLocalization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://dbpedia.org/page/Company#hasLocalization> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#City> .
+<https://dbpedia.org/page/Company#hasLocalization> <http://www.w3.org/2000/01/rdf-schema#range> <https://dbpedia.org/page/Company#Localization> .
+<https://dbpedia.org/page/Company#hasLocalization> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the localization in coordinates of a city"@en .
+<https://dbpedia.org/page/Company#hasLocalization> <http://www.w3.org/2000/01/rdf-schema#label> "hasLocalization"@en .
+# 
+# https://dbpedia.org/page/Company#hasPrice
+<https://dbpedia.org/page/Company#hasPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://dbpedia.org/page/Company#hasPrice> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dbpedia.org/page/Company#Service> .
+<https://dbpedia.org/page/Company#hasPrice> <http://www.w3.org/2000/01/rdf-schema#range> <https://dbpedia.org/page/Company#Price> .
+<https://dbpedia.org/page/Company#hasPrice> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the average cost of a service"@en .
+<https://dbpedia.org/page/Company#hasPrice> <http://www.w3.org/2000/01/rdf-schema#label> "hasPrice"@en .
+# 
+# https://dbpedia.org/page/Company#hasRating
+<https://dbpedia.org/page/Company#hasRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://dbpedia.org/page/Company#hasRating> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dbpedia.org/page/Company#Service> .
+<https://dbpedia.org/page/Company#hasRating> <http://www.w3.org/2000/01/rdf-schema#range> <https://dbpedia.org/page/Company#Rating> .
+<https://dbpedia.org/page/Company#hasRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the rating of a service"@en .
+<https://dbpedia.org/page/Company#hasRating> <http://www.w3.org/2000/01/rdf-schema#label> "hasRating" .
+# 
+# https://dbpedia.org/page/Company#hasServices
+<https://dbpedia.org/page/Company#hasServices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://dbpedia.org/page/Company#hasServices> <http://www.w3.org/2002/07/owl#inverseOf> <https://dbpedia.org/page/Company#locatedIn> .
+<https://dbpedia.org/page/Company#hasServices> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#City> .
+<https://dbpedia.org/page/Company#hasServices> <http://www.w3.org/2000/01/rdf-schema#range> <https://dbpedia.org/page/Company#Service> .
+<https://dbpedia.org/page/Company#hasServices> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents all the services that a city offers"@en .
+<https://dbpedia.org/page/Company#hasServices> <http://www.w3.org/2000/01/rdf-schema#label> "hasServices"@en .
+# 
+# https://dbpedia.org/page/Company#locatedIn
+<https://dbpedia.org/page/Company#locatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://dbpedia.org/page/Company#locatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dbpedia.org/page/Company#Service> .
+<https://dbpedia.org/page/Company#locatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#City> .
+<https://dbpedia.org/page/Company#locatedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the city where a service is located"@en .
+<https://dbpedia.org/page/Company#locatedIn> <http://www.w3.org/2000/01/rdf-schema#label> "locatedIn"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#attraction_id
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#attraction_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#attraction_id> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#identifiers> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#attraction_id> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Attraction> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#attraction_id> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#attraction_id> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the attraction class identifier"@en .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#attraction_id> <http://www.w3.org/2000/01/rdf-schema#label> "attraction_id"@en .
+# 
+# http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#city_id
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#city_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#city_id> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#identifiers> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#city_id> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#City> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#city_id> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#city_id> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the City class identifier"@en .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#city_id> <http://www.w3.org/2000/01/rdf-schema#label> "city_id"@en .
+# 
+# http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#cuisineType
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#cuisineType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#cuisineType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#types> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#cuisineType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Restaurant> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#cuisineType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#cuisineType> <http://www.w3.org/2000/01/rdf-schema#comment> "Represent the type of the cuisine of a restaurant"@en .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#cuisineType> <http://www.w3.org/2000/01/rdf-schema#label> "cuisineType"@en .
+# 
+# http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#event_id
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#event_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#event_id> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#identifiers> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#event_id> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dbpedia.org/page/Company#Event> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#event_id> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#event_id> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the Event class identifier"@en .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#event_id> <http://www.w3.org/2000/01/rdf-schema#label> "event_id"@en .
+# 
+# http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#hasDate
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#hasDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#hasDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dbpedia.org/page/Company#Event> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#hasDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#hasDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a date in YYYY/MM/DD format"@en .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#hasDate> <http://www.w3.org/2000/01/rdf-schema#label> "hasDate"@en .
+# 
+# http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#hotelType
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#hotelType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#hotelType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#types> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#hotelType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Hotel> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#hotelType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#hotelType> <http://www.w3.org/2000/01/rdf-schema#comment> "Represent the type of the hotel"@en .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#hotelType> <http://www.w3.org/2000/01/rdf-schema#label> "hotelType"@en .
+# 
+# http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#hotel_id
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#hotel_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#hotel_id> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#identifiers> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#hotel_id> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Hotel> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#hotel_id> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#hotel_id> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the Hotel class identifier"@en .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#hotel_id> <http://www.w3.org/2000/01/rdf-schema#label> "hotel_id"@en .
+# 
+# http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#identifiers
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#identifiers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#identifiers> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the identifiers of the classes"@en .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#identifiers> <http://www.w3.org/2000/01/rdf-schema#label> "identifiers"@en .
+# 
+# http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#restaurant_id
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#restaurant_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#restaurant_id> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#identifiers> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#restaurant_id> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Restaurant> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#restaurant_id> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#restaurant_id> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the Restaurant class identifier"@en .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#restaurant_id> <http://www.w3.org/2000/01/rdf-schema#label> "restaurant_id"@en .
+# 
+# http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#transport_id
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#transport_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#transport_id> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#identifiers> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#transport_id> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Transport> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#transport_id> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#transport_id> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the Transport class identifier"@en .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#transport_id> <http://www.w3.org/2000/01/rdf-schema#label> "transport_id"@en .
+# 
+# http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#types
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#types> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#types> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dbpedia.org/page/Company#Service> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#types> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://dbpedia.org/page/City#Coordinates
+<https://dbpedia.org/page/City#Coordinates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://dbpedia.org/page/City#Coordinates> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dbpedia.org/page/Company#Localization> .
+<https://dbpedia.org/page/City#Coordinates> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://dbpedia.org/page/City#Coordinates> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the coordinates of a localization"@en .
+<https://dbpedia.org/page/City#Coordinates> <http://www.w3.org/2000/01/rdf-schema#label> "Coordinates"@en .
+# 
+# https://dbpedia.org/page/City#eventType
+<https://dbpedia.org/page/City#eventType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://dbpedia.org/page/City#eventType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#types> .
+<https://dbpedia.org/page/City#eventType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dbpedia.org/page/Company#Event> .
+<https://dbpedia.org/page/City#eventType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://dbpedia.org/page/City#eventType> <http://www.w3.org/2000/01/rdf-schema#comment> "Represent the type of the event"@en .
+<https://dbpedia.org/page/City#eventType> <http://www.w3.org/2000/01/rdf-schema#label> "eventType"@en .
+# 
+# https://dbpedia.org/page/City#hasName
+<https://dbpedia.org/page/City#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://dbpedia.org/page/City#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<https://dbpedia.org/page/City#hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://dbpedia.org/page/City#hasName> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the name of an element"@en .
+<https://dbpedia.org/page/City#hasName> <http://www.w3.org/2000/01/rdf-schema#label> "hasName"@en .
+# 
+# https://dbpedia.org/page/City#priceValue
+<https://dbpedia.org/page/City#priceValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://dbpedia.org/page/City#priceValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dbpedia.org/page/Company#Price> .
+<https://dbpedia.org/page/City#priceValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://dbpedia.org/page/City#priceValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the value of the price"@en .
+<https://dbpedia.org/page/City#priceValue> <http://www.w3.org/2000/01/rdf-schema#label> "priceValue"@en .
+# 
+# https://dbpedia.org/page/City#ratingValue
+<https://dbpedia.org/page/City#ratingValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://dbpedia.org/page/City#ratingValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dbpedia.org/page/Company#Rating> .
+<https://dbpedia.org/page/City#ratingValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://dbpedia.org/page/City#ratingValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the value of a Rating"@en .
+<https://dbpedia.org/page/City#ratingValue> <http://www.w3.org/2000/01/rdf-schema#label> "ratingValue"@en .
+# 
+# https://dbpedia.org/page/Company#hotelStars
+<https://dbpedia.org/page/Company#hotelStars> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://dbpedia.org/page/Company#hotelStars> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Hotel> .
+<https://dbpedia.org/page/Company#hotelStars> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://dbpedia.org/page/Company#hotelStars> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the number of stars of a hotel"@en .
+<https://dbpedia.org/page/Company#hotelStars> <http://www.w3.org/2000/01/rdf-schema#label> "hotelStars"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Attraction
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Attraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Attraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://dbpedia.org/page/Company#Service> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Attraction> <http://www.w3.org/2000/01/rdf-schema#comment> "Attractions are interesting places or monuments for visit"@en .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Attraction> <http://www.w3.org/2000/01/rdf-schema#label> "Attraction"@en .
+# 
+# http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Bus
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Bus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Public> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Bus> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#sameAs> "https://dbpedia.org/page/Bus"@en .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Bus> <http://www.w3.org/2000/01/rdf-schema#comment> "A bus is a big car that have stops and a determined route"@en .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Bus> <http://www.w3.org/2000/01/rdf-schema#label> "Bus"@en .
+# 
+# http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#City
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <https://dbpedia.org/page/Company#Localization> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://dbpedia.org/page/Company#hasLocalization> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#City> <http://www.w3.org/2000/01/rdf-schema#comment> "A city is the place where a service is located or starts/end"@en .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#City> <http://www.w3.org/2000/01/rdf-schema#label> "City"@en .
+# 
+# http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Hotel
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Hotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Hotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://dbpedia.org/page/Company#Service> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Hotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#City> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://dbpedia.org/page/Company#locatedIn> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Hotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotels are places where people can pay for rent a room for a number of nights"@en .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Hotel> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel"@en .
+# 
+# http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Private
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Private> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Private> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Transport> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Private> <http://www.w3.org/2000/01/rdf-schema#comment> "Private transport is a paid service"@en .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Private> <http://www.w3.org/2000/01/rdf-schema#label> "Private Transport"@en .
+# 
+# http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Public
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Public> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Public> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Transport> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Public> <http://www.w3.org/2000/01/rdf-schema#comment> "Public transport is cheaper than private transport or free. Is subsidized by the State"@en .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Public> <http://www.w3.org/2000/01/rdf-schema#label> "Public Transport"@en .
+# 
+# http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Restaurant
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Restaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Restaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://dbpedia.org/page/Company#Service> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Restaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid3 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#cuisineType> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Restaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "A restaurant is a place where people can eat"@en .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Restaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant"@en .
+# 
+# http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Subway
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Subway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Subway> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Public> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Subway> <http://www.w3.org/2000/01/rdf-schema#comment> "Subway is a transport that circulates under the city and have stops and a determined route."@en .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Subway> <http://www.w3.org/2000/01/rdf-schema#label> "Subway"@en .
+# 
+# http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Train
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Train> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Train> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Public> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Train> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#sameAs> "https://dbpedia.org/page/Train"@en .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Train> <http://www.w3.org/2000/01/rdf-schema#comment> "Train circulates by railways and have different stops"@en .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Train> <http://www.w3.org/2000/01/rdf-schema#label> "Train"@en .
+# 
+# http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Transport
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Transport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Transport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://dbpedia.org/page/Company#Service> .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Transport> <http://www.w3.org/2000/01/rdf-schema#comment> "Transports are services that transports people from one place to another"@en .
+<http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Transport> <http://www.w3.org/2000/01/rdf-schema#label> "Transport"@en .
+# 
+# https://dbpedia.org/page/Company
+<https://dbpedia.org/page/Company> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://dbpedia.org/page/Company> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#sameAs> "https://dbpedia.org/page/Company"@en .
+<https://dbpedia.org/page/Company> <http://www.w3.org/2000/01/rdf-schema#comment> "A company is an organization that offers transport services."@en .
+<https://dbpedia.org/page/Company> <http://www.w3.org/2000/01/rdf-schema#label> "Company"@en .
+# 
+# https://dbpedia.org/page/Company#Event
+<https://dbpedia.org/page/Company#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://dbpedia.org/page/Company#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://dbpedia.org/page/Company#Service> .
+<https://dbpedia.org/page/Company#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid4 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#hasDate> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://dbpedia.org/page/Company#Event> <http://www.w3.org/2000/01/rdf-schema#comment> "An event is one activity that people can participate on"@en .
+<https://dbpedia.org/page/Company#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event"@en .
+# 
+# https://dbpedia.org/page/Company#Localization
+<https://dbpedia.org/page/Company#Localization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://dbpedia.org/page/Company#Localization> <http://www.w3.org/2000/01/rdf-schema#comment> "Location are de coordinates where a city is located"@en .
+<https://dbpedia.org/page/Company#Localization> <http://www.w3.org/2000/01/rdf-schema#label> "Localization"@en .
+# 
+# https://dbpedia.org/page/Company#Price
+<https://dbpedia.org/page/Company#Price> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://dbpedia.org/page/Company#Price> <http://www.w3.org/2000/01/rdf-schema#comment> "Price represents the average cost of a service"@en .
+<https://dbpedia.org/page/Company#Price> <http://www.w3.org/2000/01/rdf-schema#label> "Price"@en .
+# 
+# https://dbpedia.org/page/Company#Rating
+<https://dbpedia.org/page/Company#Rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://dbpedia.org/page/Company#Rating> <http://www.w3.org/2000/01/rdf-schema#comment> "Rating is a number between 0 to 5 that express the quality of a service based on people's valorations"@en .
+<https://dbpedia.org/page/Company#Rating> <http://www.w3.org/2000/01/rdf-schema#label> "Rating"@en .
+# 
+# https://dbpedia.org/page/Company#Service
+<https://dbpedia.org/page/Company#Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://dbpedia.org/page/Company#Service> <http://www.w3.org/2000/01/rdf-schema#comment> "Services are activities or places to sleep, eat, etc. offered to the visitors"@en .
+<https://dbpedia.org/page/Company#Service> <http://www.w3.org/2000/01/rdf-schema#label> "Service"@en .
+# 
+# https://dbpedia.org/page/Company#Taxi
+<https://dbpedia.org/page/Company#Taxi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://dbpedia.org/page/Company#Taxi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Private> .
+<https://dbpedia.org/page/Company#Taxi> <http://www.w3.org/2000/01/rdf-schema#comment> "Taxi is a transport service that a visitor can contract for transport from point A to point B."@en .
+# 
+# https://dbpedia.org/page/Company#1StarHotel
+<https://dbpedia.org/page/Company#1StarHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://dbpedia.org/page/Company#1StarHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Hotel> .
+<https://dbpedia.org/page/Company#1StarHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a hotel of 1 star quality"@en .
+<https://dbpedia.org/page/Company#1StarHotel> <http://www.w3.org/2000/01/rdf-schema#label> "1StarHotel"@en .
+# 
+# https://dbpedia.org/page/Company#2StarHotel
+<https://dbpedia.org/page/Company#2StarHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://dbpedia.org/page/Company#2StarHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Hotel> .
+<https://dbpedia.org/page/Company#2StarHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a hotel of 2 stars quality"@en .
+<https://dbpedia.org/page/Company#2StarHotel> <http://www.w3.org/2000/01/rdf-schema#label> "2StarHotel"@en .
+# 
+# https://dbpedia.org/page/Company#3StarHotel
+<https://dbpedia.org/page/Company#3StarHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://dbpedia.org/page/Company#3StarHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Hotel> .
+<https://dbpedia.org/page/Company#3StarHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a hotel of 3 stars quality"@en .
+<https://dbpedia.org/page/Company#3StarHotel> <http://www.w3.org/2000/01/rdf-schema#label> "3StarHotel"@en .
+# 
+# https://dbpedia.org/page/Company#4StarHotel
+<https://dbpedia.org/page/Company#4StarHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://dbpedia.org/page/Company#4StarHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Hotel> .
+<https://dbpedia.org/page/Company#4StarHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a hotel of 4 stars quality"@en .
+<https://dbpedia.org/page/Company#4StarHotel> <http://www.w3.org/2000/01/rdf-schema#label> "4StarHotel"@en .
+# 
+# https://dbpedia.org/page/Company#5StarHotel
+<https://dbpedia.org/page/Company#5StarHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://dbpedia.org/page/Company#5StarHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Hotel> .
+<https://dbpedia.org/page/Company#5StarHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a hotel of 5 stars quality"@en .
+<https://dbpedia.org/page/Company#5StarHotel> <http://www.w3.org/2000/01/rdf-schema#label> "5StarHotel"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://dbpedia.org/page/City#Barcelona
+<https://dbpedia.org/page/City#Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://dbpedia.org/page/City#Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#City> .
+<https://dbpedia.org/page/City#Barcelona> <https://dbpedia.org/page/Company#hasLocalization> <https://dbpedia.org/page/City#Localization1> .
+<https://dbpedia.org/page/City#Barcelona> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#city_id> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://dbpedia.org/page/City#Barcelona> <https://dbpedia.org/page/City#hasName> "Barcelona" .
+# 
+# https://dbpedia.org/page/City#Localization1
+<https://dbpedia.org/page/City#Localization1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://dbpedia.org/page/City#Localization1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dbpedia.org/page/Company#Localization> .
+<https://dbpedia.org/page/City#Localization1> <https://dbpedia.org/page/City#Coordinates> "1.23, 2.45" .
+# 
+# https://dbpedia.org/page/City#Rating1
+<https://dbpedia.org/page/City#Rating1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://dbpedia.org/page/City#Rating1> <https://dbpedia.org/page/City#ratingValue> "4.3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://dbpedia.org/page/City#19,8
+<https://dbpedia.org/page/City#19,8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://dbpedia.org/page/City#19,8> <https://dbpedia.org/page/City#priceValue> "19.8"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://dbpedia.org/page/City#19,8> <http://www.w3.org/2000/01/rdf-schema#label> "Price"@en .
+# 
+# https://dbpedia.org/page/Company#AMB
+<https://dbpedia.org/page/Company#AMB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://dbpedia.org/page/Company#AMB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dbpedia.org/page/Company> .
+<https://dbpedia.org/page/Company#AMB> <https://dbpedia.org/page/City#hasName> "AMB" .
+# 
+# https://dbpedia.org/page/Event#Festival_DURO
+<https://dbpedia.org/page/Event#Festival_DURO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://dbpedia.org/page/Event#Festival_DURO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dbpedia.org/page/Company#Event> .
+<https://dbpedia.org/page/Event#Festival_DURO> <https://dbpedia.org/page/Company#locatedIn> <https://dbpedia.org/page/City#Barcelona> .
+<https://dbpedia.org/page/Event#Festival_DURO> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#event_id> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://dbpedia.org/page/Event#Festival_DURO> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#hasDate> "2025/04/18" .
+<https://dbpedia.org/page/Event#Festival_DURO> <https://dbpedia.org/page/City#eventType> "Music" .
+<https://dbpedia.org/page/Event#Festival_DURO> <https://dbpedia.org/page/City#hasName> "Festival DURO" .
+# 
+# https://dbpedia.org/page/Hotel#NH
+<https://dbpedia.org/page/Hotel#NH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://dbpedia.org/page/Hotel#NH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Hotel> .
+<https://dbpedia.org/page/Hotel#NH> <https://dbpedia.org/page/Company#hasPrice> <https://dbpedia.org/page/City#19,8> .
+<https://dbpedia.org/page/Hotel#NH> <https://dbpedia.org/page/Company#hasRating> <https://dbpedia.org/page/City#Rating1> .
+<https://dbpedia.org/page/Hotel#NH> <https://dbpedia.org/page/Company#locatedIn> <https://dbpedia.org/page/City#Barcelona> .
+<https://dbpedia.org/page/Hotel#NH> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#hotel_id> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://dbpedia.org/page/Hotel#NH> <https://dbpedia.org/page/City#hasName> "NH" .
+<https://dbpedia.org/page/Hotel#NH> <https://dbpedia.org/page/Company#hotelStars> "4"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://dbpedia.org/page/Restaurant#Bar_Manolo
+<https://dbpedia.org/page/Restaurant#Bar_Manolo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://dbpedia.org/page/Restaurant#Bar_Manolo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Restaurant> .
+<https://dbpedia.org/page/Restaurant#Bar_Manolo> <https://dbpedia.org/page/Company#hasPrice> <https://dbpedia.org/page/City#19,8> .
+<https://dbpedia.org/page/Restaurant#Bar_Manolo> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#cuisineType> "Andaluza" .
+<https://dbpedia.org/page/Restaurant#Bar_Manolo> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#restaurant_id> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://dbpedia.org/page/Restaurant#Bar_Manolo> <https://dbpedia.org/page/City#hasName> "Bar Manolo" .
+# 
+# https://dbpedia.org/page/Transport/Public_Transport/Subway#L1
+<https://dbpedia.org/page/Transport/Public_Transport/Subway#L1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://dbpedia.org/page/Transport/Public_Transport/Subway#L1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Subway> .
+<https://dbpedia.org/page/Transport/Public_Transport/Subway#L1> <https://dbpedia.org/page/Company#hasCompany> <https://dbpedia.org/page/Company#AMB> .
+<https://dbpedia.org/page/Transport/Public_Transport/Subway#L1> <https://dbpedia.org/page/Company#locatedIn> <https://dbpedia.org/page/City#Barcelona> .
+<https://dbpedia.org/page/Transport/Public_Transport/Subway#L1> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#transport_id> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://dbpedia.org/page/Transport/Public_Transport/Subway#L1> <https://dbpedia.org/page/City#hasName> "L1" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#h> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid12 <http://www.w3.org/2003/11/swrl#body> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid14 .
+_:genid14 <http://www.w3.org/2003/11/swrl#argument2> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid14 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid14 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://dbpedia.org/page/Company#hotelStars> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
+_:genid16 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid16 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Hotel> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid12 <http://www.w3.org/2003/11/swrl#head> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
+_:genid18 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid18 <http://www.w3.org/2003/11/swrl#classPredicate> <https://dbpedia.org/page/Company#2StarHotel> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid19 <http://www.w3.org/2003/11/swrl#body> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2003/11/swrl#argument2> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid21 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid21 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://dbpedia.org/page/Company#hotelStars> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid23 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Hotel> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid19 <http://www.w3.org/2003/11/swrl#head> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid25 <http://www.w3.org/2003/11/swrl#classPredicate> <https://dbpedia.org/page/Company#3StarHotel> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid26 <http://www.w3.org/2003/11/swrl#body> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
+_:genid28 <http://www.w3.org/2003/11/swrl#argument2> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid28 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid28 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://dbpedia.org/page/Company#hotelStars> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid30 .
+_:genid30 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid30 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Hotel> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid26 <http://www.w3.org/2003/11/swrl#head> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid32 .
+_:genid32 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid32 <http://www.w3.org/2003/11/swrl#classPredicate> <https://dbpedia.org/page/Company#4StarHotel> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid33 <http://www.w3.org/2003/11/swrl#body> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid35 .
+_:genid35 <http://www.w3.org/2003/11/swrl#argument2> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid35 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid35 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://dbpedia.org/page/Company#hotelStars> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid37 .
+_:genid37 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid37 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Hotel> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid33 <http://www.w3.org/2003/11/swrl#head> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid39 .
+_:genid39 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid39 <http://www.w3.org/2003/11/swrl#classPredicate> <https://dbpedia.org/page/Company#5StarHotel> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid5 <http://www.w3.org/2003/11/swrl#body> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
+_:genid7 <http://www.w3.org/2003/11/swrl#argument2> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid7 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid7 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://dbpedia.org/page/Company#hotelStars> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
+_:genid9 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid9 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/cantiilloo/ontologies/2025/3/untitled-ontology-5#Hotel> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid5 <http://www.w3.org/2003/11/swrl#head> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid11 <http://www.w3.org/2003/11/swrl#classPredicate> <https://dbpedia.org/page/Company#1StarHotel> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
